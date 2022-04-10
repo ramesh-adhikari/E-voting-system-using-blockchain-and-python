@@ -13,10 +13,10 @@ OR
 #### Abstract
 This paper support the open source Blockchain technology to propose a design for a new electronic voting system that could be used in local or national elections.
 
-### Introduction
+#### Introduction
 An e-Voting system has to have heightened security in order make sure it is available to voters but protected against outside influences changing votes from being cast, or keep a voter’s ballot from being tampered with. Many electronic voting systems rely on Tor to hide the identity of voters [4]. However, this technique does not provide total anonymity or integrity since many intelligence agencies around the world control different parts of the Internet which can allow them to identify or intercept votes. 
 
-### Blockchain
+#### Blockchain
 Blockchain was first introduced by Satoshi Nakamoto (a pseudonym), who proposed a peer-to-peer payment system that allows cash transactions through the Internet without relying on trust or the need for a financial institution.
 
 Blockchain is an ordered data structure that contains blocks of transactions. Each block in the chain is linked to the previous block in the chain. The first block in the chain is referred to as the foundation of the stack. Each new block created gets layered on top of the previous block to form a stack called a Blockchain. 
@@ -39,8 +39,30 @@ Each block in the stack is identified by a hash placed on the header. This hash 
 Each header contains information that links a block to its previous block in the chain, which creates a chain linked to the very first block ever created, which is referred to as the foundation. The primary identifier of each block is the encrypted hash in its header. A digital fingerprint that was made combining two types of information: the information concerning the new block created, as well as the previous block in the chainAs soon as a block is created, it is sent over to the Blockchain. The system will keep an eye on incoming blocks and continuously update the chain when new blocks arrive.
 ![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/hash_block.png)
 
-### Why we need Blockchain based e-voting system
-Current voting systems like ballot box voting or electronic voting suffer from various security threats such as DDoS attacks, polling booth capturing, vote alteration and manipulation, malware attacks, etc, and also require huge amounts of paperwork, human resources, and time. This creates a sense of distrust among existing systems.
+#### Purposed System
+* Authentication: Only people already registered to vote can cast a vote. Our system will not
+support a registration process. Registration usually requires verification of certain information
+and documents to comply with current laws, which could not be done online in a secure manner.
+Therefore, the system should be able to verify voters’ identities against a previously verified
+database, and then let them vote only once.
+* Anonymity: The e-Voting system should not allow any links between voters’ identities and
+ballots. The voter has to remain anonymous during and after the election.
+* Accuracy: Votes must be accurate; every vote should be counted, and can’t be changed,
+duplicated or removed.
+* Verifiability: The system should be verifiable to make sure all votes are counted correctly.
+Beside the main requirement, our solution supports mobility, flexibility, and efficiency. However,
+we will limit this paper’s discussion to the four main requirements. 
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/purposed_system.png)
+
+To ensure that the system is secure, the block will contain the previous voter’s information. If any of the blocks were compromised, then it would be easy to find out since all blocks are connected to each other. The Blockchain is decentralized and cannot be corrupted; no single point of failure exists. The Blockchain is where the actual voting takes place. The user’s vote gets sent to one of the nodes on the system, and the node then adds the vote to the Blockchain. The voting system will have a node in each district to ensure the system is decentralized.
+
+#### CONCLUSION
+ This paper proposed an electronic voting system based on the Blockchain technology. The Blockchain will be publicly verifiable and distributed in a way that no one will be able to corrupt it.
+
+
+<hr style="border:2px solid blue"> </hr>
+
+# Implementaiton of Blockchain in E-voting system
 
 ## About Applicaiton
 Let us briefly define the scope of our mini-application. The goal is to build an application that allows Voter to vote for the party they want with their Voter ID. One voter can only vote one time with their Unique Voter ID. Since the voted information will be stored on the blockchain, it'll be immutable and permanent. Users will interact with the application via a simple web interface.
