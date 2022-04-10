@@ -1,23 +1,24 @@
-# python_blockchain_app
+# E-voting-system-using-blockchain-and-python
 
-A simple tutorial for developing a blockchain application from scratch in Python.
+This is the simple e-voting system, which is based on the implementation of Blockchain technology in Python. It covers the all the basic terms of blockchain and how to implement it on real-time application.
+
 
 ## What is blockchain? How it is implemented? And how it works?
 
-Please read the [step-by-step implementation tutorial](https://gist.github.com/satwikkansal/4a857cad2797b9d199547a752933a715) to get your answers :)
+
 
 ## Instructions to run
 
 Clone the project,
 
 ```sh
-$ git clone https://github.com/satwikkansal/python_blockchain_app.git
+$ git clone https://github.com/satwikkansal/E-voting-system-using-blockchain-and-python.git
 ```
 
 Install the dependencies,
 
 ```sh
-$ cd python_blockchain_app
+$ cd E-voting-system-using-blockchain-and-python
 $ pip install -r requirements.txt
 ```
 
