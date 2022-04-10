@@ -133,23 +133,23 @@ The application should be up and running at [http://localhost:5000](http://local
 
 Here are a few screenshots
 
-1. Posting vote
+##### 1. Posting vote
 
 ![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/1.png)
 
-2. Requesting the node to mine
+##### 2. Requesting the node to mine
 
 ![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/2.png)
 
-3. Resyncing with the chain for updated data
+##### 3. Resyncing with the chain for updated data
 
 ![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/3.png)
 
-4. Chain of the transaction
+##### 4. Chain of the transaction
 
 ![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/4.png)
 
-4. App screenshot
+##### 5. App screenshot
 
 ![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/5.png)
 
