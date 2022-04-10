@@ -25,7 +25,7 @@ Start a blockchain node server,
 
 ```sh
 # Windows users can follow this: https://flask.palletsprojects.com/en/1.1.x/cli/#application-discovery
-$ export FLASK_APP=node_server.py
+$ export FLASK_APP=service.py
 $ flask run --port 8000
 ```
 
@@ -35,14 +35,14 @@ One instance of our blockchain node is now up and running at port 8000.
 Run the application on a different terminal session,
 
 ```sh
-$ python run_app.py
+$ python app.py
 ```
 
 The application should be up and running at [http://localhost:5000](http://localhost:5000).
 
 Here are a few screenshots
 
-1. Posting some content
+1. Posting vote
 
 ![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/1.png)
 
@@ -59,7 +59,7 @@ To play around by spinning off multiple custom nodes, use the `register_with/` e
 Here's a sample scenario that you might wanna try,
 
 ```sh
-# Make sure you set the FLASK_APP environment variable to node_server.py before running these nodes
+# Make sure you set the FLASK_APP environment variable to service.py before running these nodes
 # already running
 $ flask run --port 8000 &
 # spinning up new nodes
@@ -94,4 +94,3 @@ $ curl -X GET http://localhost:8001/chain
 $ curl -X GET http://localhost:8002/chain
 ```
 
-*PS: For consulting, you can reach out to me via Codementor (use [this link](https://www.codementor.io/satwikkansal?partner=satwikkansal) for free 10$ credits).*
