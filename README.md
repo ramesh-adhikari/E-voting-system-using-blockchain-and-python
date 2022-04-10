@@ -1,5 +1,18 @@
 # E-voting-system-using-blockchain-and-python
 
+## Based Research Paper
+This project is based on the concept of research paper which was published in International Journal of Network Security & Its Applications (IJNSA) entitled **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** by Ahmed Ben Ayed 
+
+## Review, Summary of the **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** 
+[Paper Link](https://aircconline.com/ijnsa/V9N3/9317ijnsa01.pdf)
+OR
+[Researchgate] (https://www.researchgate.net/publication/341498272_A_CONCEPTUAL_SECURE_BLOCKCHAIN-BASED_ELECTRONIC_VOTING_SYSTEM)
+OR
+[This repository] ((https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/research-paper/Blockchain_Voting_System20200318-112191-yzyxvw-with-cover-page-v2.pdf))
+
+#### Abstract
+This paper support the open source Blockchain technology to propose a design for a new electronic voting system that could be used in local or national elections. 
+
 ## What is blockchain? How it is implemented? And how it works?
 
 Blockchain is a technology that is rapidly gaining momentum in current era. With high security and transparency provisions, it is being widely used in supply chain management systems, healthcare, payments, business, IoT, voting systems, etc.
@@ -179,10 +192,11 @@ $ curl -X GET http://localhost:8002/chain
 ```
 
 ## References
-1. https://www.geeksforgeeks.org/decentralized-voting-system-using-blockchain/
-2. https://www.javatpoint.com/blockchain-proof-of-work
-3. https://github.com/satwikkansal/python_blockchain_app/tree/ibm_blockchain_post
-4. https://www.ibm.com/topics/what-is-blockchain
-5. https://en.wikipedia.org/wiki/Blockchain
-6. https://github.com/Abhiramborige/Online-Voting-Using-Blockchain
+1. https://aircconline.com/ijnsa/V9N3/9317ijnsa01.pdf
+2. https://www.geeksforgeeks.org/decentralized-voting-system-using-blockchain/
+3. https://www.javatpoint.com/blockchain-proof-of-work
+4. https://github.com/satwikkansal/python_blockchain_app/tree/ibm_blockchain_post
+5. https://www.ibm.com/topics/what-is-blockchain
+6. https://en.wikipedia.org/wiki/Blockchain
+7. https://github.com/Abhiramborige/Online-Voting-Using-Blockchain
 
