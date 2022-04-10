@@ -51,6 +51,10 @@ class Block:
         self.previous_hash = previous_hash
         self.nonce = nonce
 ```
+
+#### Structure
+
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/structure.png)
 ### 1. Digital fingerprints to the blocks
 We'd like to prevent any kind of tampering in the data stored inside the block, and detection is the first step to that. To detect if the data in the block is tampered, we can use cryptographic hash functions.
 
@@ -67,7 +71,7 @@ def compute_hash(self):
 We need a mechanism to make sure that any change in the previous blocks invalidates the entire chain. The Bitcoin way to do this is creating dependency among consecutive blocks by chaining them with the hash of block immediately previous to them. By chaining here, we mean to include the hash of the previous block in the current block in a new field called previous_hash.
 
 Okay, if every block is linked to the previous block by the previous_hash field, what about the very first block? The very first block is called the genesis block and can be generated either manually or by some unique logic. Let's add the previous_hash field to the Block class and implement the initial structure of our Blockchain class.
-
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/block.png)
 Now, if the content of any of the previous blocks changes,
 
 * The hash of that previous block would change.
@@ -191,4 +195,9 @@ $ curl -X GET http://localhost:8002/chain
 
 ## References
 1. https://www.geeksforgeeks.org/decentralized-voting-system-using-blockchain/
+2. https://www.javatpoint.com/blockchain-proof-of-work
+3. https://github.com/satwikkansal/python_blockchain_app/tree/ibm_blockchain_post
+4. https://www.ibm.com/topics/what-is-blockchain
+5. https://en.wikipedia.org/wiki/Blockchain
+6. https://github.com/Abhiramborige/Online-Voting-Using-Blockchain
 
