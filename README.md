@@ -3,7 +3,7 @@
 ## Reference Research Paper
 This project is based on the concept of research paper which was published in International Journal of Network Security & Its Applications (IJNSA) entitled **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** by Ahmed Ben Ayed 
 
-## Review, Summary of the **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** 
+### Review, Summary of the **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** 
 [Paper Link](https://aircconline.com/ijnsa/V9N3/9317ijnsa01.pdf)
 OR
 [Researchgate] (https://www.researchgate.net/publication/341498272_A_CONCEPTUAL_SECURE_BLOCKCHAIN-BASED_ELECTRONIC_VOTING_SYSTEM)
@@ -11,13 +11,16 @@ OR
 [This repository] ((https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/reference-paper/Blockchain_Voting_System20200318-112191-yzyxvw-with-cover-page-v2.pdf))
 
 #### Abstract
-This paper support the open source Blockchain technology to propose a design for a new electronic voting system that could be used in local or national elections. 
+This paper support the open source Blockchain technology to propose a design for a new electronic voting system that could be used in local or national elections.
 
-## What is blockchain? How it is implemented? And how it works?
+### Introduction
+An e-Voting system has to have heightened security in order make sure it is available to voters but protected against outside influences changing votes from being cast, or keep a voter’s ballot from being tampered with. Many electronic voting systems rely on Tor to hide the identity of voters [4]. However, this technique does not provide total anonymity or integrity since many intelligence agencies around the world control different parts of the Internet which can allow them to identify or intercept votes. 
 
-Blockchain is a technology that is rapidly gaining momentum in current era. With high security and transparency provisions, it is being widely used in supply chain management systems, healthcare, payments, business, IoT, voting systems, etc.
+### Blockchain
+Blockchain was first introduced by Satoshi Nakamoto (a pseudonym), who proposed a peer-to-peer payment system that allows cash transactions through the Internet without relying on trust or the need for a financial institution.
 
-Blockchain is a way of storing digital data. The data can literally be anything. For Bitcoin, it's the transactions (logs of transfers of Bitcoin from one account to another account), but it can even be files; it doesn't matter. The data is stored in the form of blocks, which are linked (or chained) together by cryptographic hashes. Hence the name "blockchain."
+Blockchain is an ordered data structure that contains blocks of transactions. Each block in the chain is linked to the previous block in the chain. The first block in the chain is referred to as the foundation of the stack. Each new block created gets layered on top of the previous block to form a stack called a Blockchain. 
+
 
 All of the magic lies in the way this data is stored and added to the blockchain. A blockchain is essentially a linked-list containing ordered-data, with some constraints like below;
 
@@ -29,6 +32,12 @@ All of the magic lies in the way this data is stored and added to the blockchain
 * Immutability and durability of data
 * No single point of control or failure
 * A verifiable audit trail of the order in which data was added
+
+Each block in the stack is identified by a hash placed on the header. This hash is generated using the Secure Hash Algorithm (SHA-256) to generate an almost idiosyncratic fixed-size 256-bit hash.
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/hash_function.png)
+
+Each header contains information that links a block to its previous block in the chain, which creates a chain linked to the very first block ever created, which is referred to as the foundation. The primary identifier of each block is the encrypted hash in its header. A digital fingerprint that was made combining two types of information: the information concerning the new block created, as well as the previous block in the chainAs soon as a block is created, it is sent over to the Blockchain. The system will keep an eye on incoming blocks and continuously update the chain when new blocks arrive.
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/hash_block.png)
 
 ### Why we need Blockchain based e-voting system
 Current voting systems like ballot box voting or electronic voting suffer from various security threats such as DDoS attacks, polling booth capturing, vote alteration and manipulation, malware attacks, etc, and also require huge amounts of paperwork, human resources, and time. This creates a sense of distrust among existing systems.
