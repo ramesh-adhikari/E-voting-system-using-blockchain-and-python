@@ -51,7 +51,7 @@ class Block:
         self.previous_hash = previous_hash
         self.nonce = nonce
 ```
-### Digital fingerprints to the blocks
+### 1. Digital fingerprints to the blocks
 We'd like to prevent any kind of tampering in the data stored inside the block, and detection is the first step to that. To detect if the data in the block is tampered, we can use cryptographic hash functions.
 
 A hash function is a function that takes data of any size and produces data of a fixed size from it (called hash), which is generally used to identify the input. This project used sha256() hash function. We'll store the hash of the block in a field inside our Block object, and it'll act like a digital fingerprint (or signature) of data contained in it:
@@ -63,7 +63,7 @@ def compute_hash(self):
         block_string = json.dumps(self.__dict__, sort_keys=True)
         return sha256(block_string.encode()).hexdigest()
 ```
-### Chain the blocks
+### 2. Chain the blocks
 We need a mechanism to make sure that any change in the previous blocks invalidates the entire chain. The Bitcoin way to do this is creating dependency among consecutive blocks by chaining them with the hash of block immediately previous to them. By chaining here, we mean to include the hash of the previous block in the current block in a new field called previous_hash.
 
 Okay, if every block is linked to the previous block by the previous_hash field, what about the very first block? The very first block is called the genesis block and can be generated either manually or by some unique logic. Let's add the previous_hash field to the Block class and implement the initial structure of our Blockchain class.
@@ -75,23 +75,24 @@ Now, if the content of any of the previous blocks changes,
 * Since the input data to compute the hash of any block also consists of the previous_hash field, the hash of the next block will also change.
 Ultimately, the entire chain following the replaced block is invalidated, and the only way to fix it is to recompute the entire chain.
 
-### Blockchain Proof of work
+### 3. Blockchain Proof of work
 Proof of Work(PoW) is the original consensus algorithm in a blockchain network. The algorithm is used to confirm the transaction and creates a new block to the chain. In this algorithm, minors (a group of people) compete against each other to complete the transaction on the network. The process of competing against each other is called mining. As soon as miners successfully created a valid block, he gets rewarded. The most famous application of Proof of Work(PoW) is Bitcoin.
 
 If we change the previous block, we can re-compute the hashes of all the following blocks quite easily and create a different valid blockchain. To prevent this, we will now exploit the asymmetry in efforts of hash functions that we discussed previously to make the task of calculating the hash difficult and random. Here's how we do this. Instead of accepting any hash for the block, we add some constraint to it. Let's add a constraint that our hash should start with "n leading zeroes" where n can be any positive integer.
 
 We know that unless we change the data of the block, the hash is not going to change, and of course, we don't want to change existing data. So, what do we do? Simple! We'll add some dummy data that we can change. Let's introduce a new field in our block called nonce. A nonce is a number that we'll keep on changing until we get a hash that satisfies our constraint. The nonce satisfying the constraint serves as proof that some computation has been performed. The number of zeroes specified in the constraint decides the "difficulty" of our Proof of Work algorithm (more the number of zeroes, harder it is to figure out the nonce).
 
-### Add blocks to the chain
+### 4. Add blocks to the chain
 To add a block to the chain, we'll first have to verify that,
 
 * The data is untampered i.e., the Proof of Work provided is correct
 * The order of transactions is preserved i.e., the previous_hash field of the block to be added points to the hash of the latest block in our chain.
 
-### Mining
+### 5. Mining
 Mining, in the context of blockchain technology, is the process of adding transactions to the large distributed public ledger of existing transactions, known as the blockchain. The term is best known for its association with bitcoin, though other technologies using the blockcahin employ mining.
 
 The transactions will be initially stored as a pool of unconfirmed transactions. The process of putting the unconfirmed transactions in a block and computing Proof of Work is known as the mining of blocks. Once the nonce satisfying our constraints is figured out, we can say that a block has been mined, and it can be put into the chain.
+
 ## Instructions to run
 
 Clone the project,
