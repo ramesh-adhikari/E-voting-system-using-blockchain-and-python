@@ -1,0 +1,139 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+	<br>
+	<div style="width:100%">
+	<div style="float: left; width: 70%; height: 200px;">
+	<!-- <center> -->
+		
+			<form action="/submit" id="textform" method="post">
+				<table style="width:70%; float: right;">
+				 <tr>
+				  	<td>
+				  		<label>Select Political party to vote</label>
+				  	</td>
+				    <td><select name="party" required>
+							<option value="">select</option>
+							{% for political_partie in political_parties %}
+							<option value="{{political_partie}}">{{political_partie}}</option>
+							{% endfor %}
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Enter Voter ID <small>(enter from sample Voter ID)</small></label>
+					</td>
+					<td>
+						<input type="text" name="voter_id" placeholder="VOID001" required>
+					</td>	
+				</tr>
+			    <tr>
+			    	<td></td>
+			    	<td>
+			    		<input type="submit" value="Vote">
+			    	</td>
+			    </tr>
+				</table>
+			</form>
+	<!-- </center> -->
+	</div>
+		<div style="float:right; width: 30% ; height: 200px; overflow-y:auto ">
+		
+			<table style="width:40%; float: right;">
+				<tr>
+			  	<th>Sample Voter ID</th>
+			  	</tr>
+					{% for voter_id in voter_ids %}
+					<tr>
+						<td>
+				  			{{voter_id}}
+				  		</td>
+					</tr>
+				  	{% endfor %}
+			</table>
+		</div>
+	</div>
+	<br>
+	<hr>
+	<center>
+		<a href="{{node_address}}/mine" target="_blank"><button>Request to mine</button></a>
+		<a href="/"><button>Resync</button></a>
+		<a href="{{node_address}}/chain" target="_blank"><button>View Chain</button></a>
+	</center>
+	<hr>
+
+	    
+
+	<div style="margin: 20px;">
+
+	 <div class="col-md-6" >
+	    	<h2>Result Detail</h2>
+
+			<table>
+			  <tr>
+			  	<th>Voter ID</th>
+			    <th>Political Party Name</th>
+			    <th>Voted Time</th>
+			  </tr>
+			  {% for post in posts %}
+			  <tr>
+			  	<td>{{post.voter_id}}</td>
+			    <td>{{post.party}}</td>
+			    <td>{{readable_time(post.timestamp)}}</td>
+			  </tr>
+			 {% endfor %}
+			</table>
+	    </div>
+
+	<div class="col-md-4" style="margin-left: 10px;">
+	    	<h2>Result Summary</h2>
+
+			<table> 
+			  <tr>
+			    <th width="25%">Political Party Name</th>
+			    <th width="25%">Total vote gain</th>
+			  </tr>
+			  {% for p in political_parties %}
+			  <tr>
+			    <td>{{p}}</td>
+			    <td>{{vote_gain.count(p)}}</td>
+			  </tr>
+			 {% endfor %}
+			</table>
+	    </div>
+	    
+
+	   
+	
+
+	<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+
+	
+	.col-md-4{
+	    float: left;
+	    width: 33.33333333%;
+	}
+	.col-md-2{
+	    float: left;
+	    width: 16.33333333%;
+	}
+	.col-md-6{
+	    float: left;
+	    width: 60.33333333%;
+	}
+	</style>
+    </div>
+{% endblock %}
