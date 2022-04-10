@@ -1,6 +1,6 @@
 # E-voting-system-using-blockchain-and-python
 
-## Based Research Paper
+## Reference Research Paper
 This project is based on the concept of research paper which was published in International Journal of Network Security & Its Applications (IJNSA) entitled **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** by Ahmed Ben Ayed 
 
 ## Review, Summary of the **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** 
@@ -8,7 +8,7 @@ This project is based on the concept of research paper which was published in In
 OR
 [Researchgate] (https://www.researchgate.net/publication/341498272_A_CONCEPTUAL_SECURE_BLOCKCHAIN-BASED_ELECTRONIC_VOTING_SYSTEM)
 OR
-[This repository] ((https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/research-paper/Blockchain_Voting_System20200318-112191-yzyxvw-with-cover-page-v2.pdf))
+[This repository] ((https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/reference-paper/Blockchain_Voting_System20200318-112191-yzyxvw-with-cover-page-v2.pdf))
 
 #### Abstract
 This paper support the open source Blockchain technology to propose a design for a new electronic voting system that could be used in local or national elections. 
