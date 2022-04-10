@@ -44,15 +44,23 @@ Here are a few screenshots
 
 1. Posting vote
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/1.png)
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/1.png)
 
 2. Requesting the node to mine
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/2.png)
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/2.png)
 
 3. Resyncing with the chain for updated data
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/3.png)
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/3.png)
+
+4. Chain of the transaction
+
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/4.png)
+
+4. App screenshot
+
+![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/5.png)
 
 To play around by spinning off multiple custom nodes, use the `register_with/` endpoint to register a new node. 
 
