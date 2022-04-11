@@ -1,9 +1,26 @@
 # E-voting-system-using-blockchain-and-python
 
-## Reference Research Paper
+## Outline
+1. Rederence Research Paper
+    1. Abstract
+    2. Introduction
+    3. Blockchain
+    4. Ourposed System
+    5. Conclusion
+2. Implementaiton of Blockchain in E-voting system
+    1. About Applicaiton
+    2. Structure
+    3. Chain the blocks
+    4. Blockchain Proof of work
+    5. Add blocks to the chain
+    6. Mining
+3. Instructions to run application
+4. References
+
+## 1. Reference Research Paper
 This project is based on the concept of research paper which was published in International Journal of Network Security & Its Applications (IJNSA) entitled **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** by Ahmed Ben Ayed 
 
-### Review, Summary of the **"A CONCEPTUAL SECURE BLOCKCHAIN- BASED ELECTRONIC VOTING SYSTEM"** 
+### Review, Summary of  **"A Conceptual Secure Blockchain-based Electronic Voting System"** 
 [Paper Link](https://aircconline.com/ijnsa/V9N3/9317ijnsa01.pdf)
 OR
 [Researchgate] (https://www.researchgate.net/publication/341498272_A_CONCEPTUAL_SECURE_BLOCKCHAIN-BASED_ELECTRONIC_VOTING_SYSTEM)
@@ -141,7 +158,7 @@ Mining, in the context of blockchain technology, is the process of adding transa
 
 The transactions will be initially stored as a pool of unconfirmed transactions. The process of putting the unconfirmed transactions in a block and computing Proof of Work is known as the mining of blocks. Once the nonce satisfying our constraints is figured out, we can say that a block has been mined, and it can be put into the chain.
 
-## Instructions to run
+## Instructions to run the application
 
 Clone the project,
 
