@@ -86,9 +86,9 @@ Let us briefly define the scope of our mini-application. The goal is to build an
 
 We'll follow a bottom-up approach to implement things. Let's begin by defining the structure of the data that we'll store in the blockchain. Three essential elements will identify a post (message posted by any user on our application):
 
-* party (Political parties, Leader)
 * voter_id (Voter with their voter ID)
-* Timestamp
+* party (Political parties, Leader)
+* timestamp
 
 We'll be storing data in our blockchain in a format that's widely used: JSON. Here's what a post stored in blockchain will look like:
 
