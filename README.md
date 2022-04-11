@@ -1,7 +1,7 @@
 # E-voting-system-using-blockchain-and-python
 
 ## Outline
-1. Rederence Research Paper
+1. Reference Research Paper
     1. Abstract
     2. Introduction
     3. Blockchain
