@@ -8,7 +8,7 @@
     4. Ourposed System
     5. Conclusion
 2. Implementaiton of Blockchain in E-voting system
-    1. About Applicaiton
+    1. About application
     2. Structure of Blockchain
     3. Chain the blocks
     4. Blockchain Proof of work
