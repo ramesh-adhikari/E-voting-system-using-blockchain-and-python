@@ -9,7 +9,7 @@
     5. Conclusion
 2. Implementaiton of Blockchain in E-voting system
     1. About Applicaiton
-    2. Structure
+    2. Structure of Blockchain
     3. Chain the blocks
     4. Blockchain Proof of work
     5. Add blocks to the chain
@@ -31,7 +31,7 @@ OR
 This paper support the open source Blockchain technology to propose a design for a new electronic voting system that could be used in local or national elections.
 
 #### Introduction
-An e-Voting system has to have heightened security in order make sure it is available to voters but protected against outside influences changing votes from being cast, or keep a voter’s ballot from being tampered with. Many electronic voting systems rely on Tor to hide the identity of voters [4]. However, this technique does not provide total anonymity or integrity since many intelligence agencies around the world control different parts of the Internet which can allow them to identify or intercept votes. 
+An e-Voting system has to have heightened security in order make sure it is available to voters but protected against outside influences changing votes from being cast, or keep a voter’s ballot from being tampered with. Many electronic voting systems rely on to hide the identity of voters. However, this technique does not provide total anonymity or integrity since many intelligence agencies around the world control different parts of the Internet which can allow them to identify or intercept votes. 
 
 #### Blockchain
 Blockchain was first introduced by Satoshi Nakamoto (a pseudonym), who proposed a peer-to-peer payment system that allows cash transactions through the Internet without relying on trust or the need for a financial institution.
@@ -113,7 +113,7 @@ class Block:
         self.nonce = nonce
 ```
 
-#### Structure
+### Structure of Blockchain
 
 ![image.png](https://github.com/adhikarir/E-voting-system-using-blockchain-and-python/blob/master/screenshots/structure.png)
 ### 1. Digital fingerprints to the blocks
