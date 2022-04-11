@@ -226,7 +226,19 @@ $ flask run --port 8000 &
 $ flask run --port 8001 &
 $ flask run --port 8002 &
 ```
-
+You can use the following cURL requests to register the nodes at port 8001 and 8002 with the already running 8000.
+```
+curl -X POST \
+  http://127.0.0.1:8001/register_with \
+  -H 'Content-Type: application/json' \
+  -d '{"node_address": "http://127.0.0.1:8000"}'
+```
+```
+curl -X POST \
+  http://127.0.0.1:8002/register_with \
+  -H 'Content-Type: application/json' \
+  -d '{"node_address": "http://127.0.0.1:8000"}'
+```
 
 This will make the node at port 8000 aware of the nodes at port 8001 and 8002, and make the newer nodes sync the chain with the node 8000, so that they are able to actively participate in the mining process post registration.
 

@@ -91,7 +91,7 @@ def submit_textarea():
     requests.post(new_tx_address,
                   json=post_object,
                   headers={'Content-type': 'application/json'})
-    print(vote_check)
+    # print(vote_check)
     flash('Voted to '+party+' successfully!', 'success')
     return redirect('/')
 
