@@ -179,6 +179,8 @@ Start a blockchain node server,
 # Windows users can follow this: https://flask.palletsprojects.com/en/1.1.x/cli/#application-discovery
 $ export FLASK_APP=service.py
 $ flask run --port 8000
+or
+python3 -m flask run --port 8000
 ```
 
 One instance of our blockchain node is now up and running at port 8000.
@@ -221,7 +223,7 @@ Here's a sample scenario that you might wanna try,
 ```sh
 # Make sure you set the FLASK_APP environment variable to service.py before running these nodes
 # already running
-$ flask run --port 8000 &
+$ flask run --port 8000  or python3 -m flask run --port 8000&
 # spinning up new nodes
 $ flask run --port 8001 &
 $ flask run --port 8002 &
